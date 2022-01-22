@@ -1,0 +1,16 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "include": ["src", "../../typings/**/*.d.ts", "../avalanche-utils/src/core.ts"],
+  "references": [
+    {"path": "../avalanche-account"},
+    {"path": "../avalanche-crypto"},
+    {"path": "../avalanche-utils"},
+    {"path": "../avalanche-network"},
+    {"path": "../avalanche-transaction"},
+    {"path": "../avalanche-contract"}
+  ]
+}
