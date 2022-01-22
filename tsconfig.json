@@ -1,16 +1,17 @@
 {
-  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "dist"
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true
   },
-  "include": ["src", "../../typings/**/*.d.ts", "../avalanche-utils/src/core.ts"],
+  "include": ["src", "../../typings/**/*.d.ts", "../avalanche-js-utils/src/core.ts"],
   "references": [
-    {"path": "../avalanche-account"},
-    {"path": "../avalanche-crypto"},
-    {"path": "../avalanche-utils"},
-    {"path": "../avalanche-network"},
-    {"path": "../avalanche-transaction"},
-    {"path": "../avalanche-contract"}
+    {"path": "../avalanche-js-account"},
+    {"path": "../avalanche-js-crypto"},
+    {"path": "../avalanche-js-utils"},
+    {"path": "../avalanche-js-network"},
+    {"path": "../avalanche-js-transaction"},
+    {"path": "../avalanche-js-contract"}
   ]
 }
